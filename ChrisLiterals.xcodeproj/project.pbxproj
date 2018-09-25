@@ -46,6 +46,7 @@
 		0C7BB648215A8C7E00F9D7DF /* ChrisLiteralsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChrisLiteralsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C7BB64C215A8C7E00F9D7DF /* ChrisLiteralsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChrisLiteralsUITests.swift; sourceTree = "<group>"; };
 		0C7BB64E215A8C7E00F9D7DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C7BB65C215A9C7900F9D7DF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +77,7 @@
 		0C7BB622215A8C7D00F9D7DF = {
 			isa = PBXGroup;
 			children = (
+				0C7BB65C215A9C7900F9D7DF /* README.md */,
 				0C7BB62D215A8C7D00F9D7DF /* ChrisLiterals */,
 				0C7BB640215A8C7E00F9D7DF /* ChrisLiteralsTests */,
 				0C7BB64B215A8C7E00F9D7DF /* ChrisLiteralsUITests */,

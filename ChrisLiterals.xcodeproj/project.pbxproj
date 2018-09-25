@@ -13,6 +13,10 @@
 		0C7BB636215A8C7E00F9D7DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C7BB634215A8C7E00F9D7DF /* Main.storyboard */; };
 		0C7BB642215A8C7E00F9D7DF /* ChrisLiteralsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7BB641215A8C7E00F9D7DF /* ChrisLiteralsTests.swift */; };
 		0C7BB64D215A8C7E00F9D7DF /* ChrisLiteralsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7BB64C215A8C7E00F9D7DF /* ChrisLiteralsUITests.swift */; };
+		0C7BB664215A9E4B00F9D7DF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C7BB663215A9E4B00F9D7DF /* Cocoa.framework */; };
+		0C7BB667215A9E4B00F9D7DF /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7BB666215A9E4B00F9D7DF /* SourceEditorExtension.swift */; };
+		0C7BB669215A9E4B00F9D7DF /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7BB668215A9E4B00F9D7DF /* SourceEditorCommand.swift */; };
+		0C7BB66E215A9E4B00F9D7DF /* Chris Convert to Literals.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0C7BB661215A9E4B00F9D7DF /* Chris Convert to Literals.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +34,28 @@
 			remoteGlobalIDString = 0C7BB62A215A8C7D00F9D7DF;
 			remoteInfo = ChrisLiterals;
 		};
+		0C7BB66C215A9E4B00F9D7DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C7BB623215A8C7D00F9D7DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C7BB660215A9E4B00F9D7DF;
+			remoteInfo = "Chris Convert to Literals";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0C7BB672215A9E4B00F9D7DF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0C7BB66E215A9E4B00F9D7DF /* Chris Convert to Literals.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0C7BB62B215A8C7D00F9D7DF /* ChrisLiterals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChrisLiterals.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +72,12 @@
 		0C7BB64C215A8C7E00F9D7DF /* ChrisLiteralsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChrisLiteralsUITests.swift; sourceTree = "<group>"; };
 		0C7BB64E215A8C7E00F9D7DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C7BB65C215A9C7900F9D7DF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0C7BB661215A9E4B00F9D7DF /* Chris Convert to Literals.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Chris Convert to Literals.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C7BB663215A9E4B00F9D7DF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0C7BB666215A9E4B00F9D7DF /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		0C7BB668215A9E4B00F9D7DF /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		0C7BB66A215A9E4B00F9D7DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C7BB66B215A9E4B00F9D7DF /* Chris_Convert_to_Literals.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chris_Convert_to_Literals.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +102,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0C7BB65E215A9E4B00F9D7DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C7BB664215A9E4B00F9D7DF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,6 +120,8 @@
 				0C7BB62D215A8C7D00F9D7DF /* ChrisLiterals */,
 				0C7BB640215A8C7E00F9D7DF /* ChrisLiteralsTests */,
 				0C7BB64B215A8C7E00F9D7DF /* ChrisLiteralsUITests */,
+				0C7BB665215A9E4B00F9D7DF /* Chris Convert to Literals */,
+				0C7BB662215A9E4B00F9D7DF /* Frameworks */,
 				0C7BB62C215A8C7D00F9D7DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +132,7 @@
 				0C7BB62B215A8C7D00F9D7DF /* ChrisLiterals.app */,
 				0C7BB63D215A8C7E00F9D7DF /* ChrisLiteralsTests.xctest */,
 				0C7BB648215A8C7E00F9D7DF /* ChrisLiteralsUITests.xctest */,
+				0C7BB661215A9E4B00F9D7DF /* Chris Convert to Literals.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +168,25 @@
 			path = ChrisLiteralsUITests;
 			sourceTree = "<group>";
 		};
+		0C7BB662215A9E4B00F9D7DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C7BB663215A9E4B00F9D7DF /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C7BB665215A9E4B00F9D7DF /* Chris Convert to Literals */ = {
+			isa = PBXGroup;
+			children = (
+				0C7BB666215A9E4B00F9D7DF /* SourceEditorExtension.swift */,
+				0C7BB668215A9E4B00F9D7DF /* SourceEditorCommand.swift */,
+				0C7BB66A215A9E4B00F9D7DF /* Info.plist */,
+				0C7BB66B215A9E4B00F9D7DF /* Chris_Convert_to_Literals.entitlements */,
+			);
+			path = "Chris Convert to Literals";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,10 +197,12 @@
 				0C7BB627215A8C7D00F9D7DF /* Sources */,
 				0C7BB628215A8C7D00F9D7DF /* Frameworks */,
 				0C7BB629215A8C7D00F9D7DF /* Resources */,
+				0C7BB672215A9E4B00F9D7DF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0C7BB66D215A9E4B00F9D7DF /* PBXTargetDependency */,
 			);
 			name = ChrisLiterals;
 			productName = ChrisLiterals;
@@ -182,6 +245,23 @@
 			productReference = 0C7BB648215A8C7E00F9D7DF /* ChrisLiteralsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0C7BB660215A9E4B00F9D7DF /* Chris Convert to Literals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C7BB66F215A9E4B00F9D7DF /* Build configuration list for PBXNativeTarget "Chris Convert to Literals" */;
+			buildPhases = (
+				0C7BB65D215A9E4B00F9D7DF /* Sources */,
+				0C7BB65E215A9E4B00F9D7DF /* Frameworks */,
+				0C7BB65F215A9E4B00F9D7DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chris Convert to Literals";
+			productName = "Chris Convert to Literals";
+			productReference = 0C7BB661215A9E4B00F9D7DF /* Chris Convert to Literals.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,6 +283,9 @@
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 0C7BB62A215A8C7D00F9D7DF;
 					};
+					0C7BB660215A9E4B00F9D7DF = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = 0C7BB626215A8C7D00F9D7DF /* Build configuration list for PBXProject "ChrisLiterals" */;
@@ -221,6 +304,7 @@
 				0C7BB62A215A8C7D00F9D7DF /* ChrisLiterals */,
 				0C7BB63C215A8C7E00F9D7DF /* ChrisLiteralsTests */,
 				0C7BB647215A8C7E00F9D7DF /* ChrisLiteralsUITests */,
+				0C7BB660215A9E4B00F9D7DF /* Chris Convert to Literals */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +327,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0C7BB646215A8C7E00F9D7DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C7BB65F215A9E4B00F9D7DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,6 +368,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0C7BB65D215A9E4B00F9D7DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C7BB667215A9E4B00F9D7DF /* SourceEditorExtension.swift in Sources */,
+				0C7BB669215A9E4B00F9D7DF /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +389,11 @@
 			isa = PBXTargetDependency;
 			target = 0C7BB62A215A8C7D00F9D7DF /* ChrisLiterals */;
 			targetProxy = 0C7BB649215A8C7E00F9D7DF /* PBXContainerItemProxy */;
+		};
+		0C7BB66D215A9E4B00F9D7DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C7BB660215A9E4B00F9D7DF /* Chris Convert to Literals */;
+			targetProxy = 0C7BB66C215A9E4B00F9D7DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -422,6 +527,7 @@
 		0C7BB652215A8C7E00F9D7DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ChrisLiterals/ChrisLiterals.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,6 +546,7 @@
 		0C7BB653215A8C7E00F9D7DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ChrisLiterals/ChrisLiterals.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -533,6 +640,44 @@
 			};
 			name = Release;
 		};
+		0C7BB670215A9E4B00F9D7DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Chris Convert to Literals/Chris_Convert_to_Literals.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Chris Convert to Literals/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jiansoung.ChrisLiterals.Chris-Convert-to-Literals";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		0C7BB671215A9E4B00F9D7DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Chris Convert to Literals/Chris_Convert_to_Literals.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Chris Convert to Literals/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jiansoung.ChrisLiterals.Chris-Convert-to-Literals";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,6 +713,15 @@
 			buildConfigurations = (
 				0C7BB658215A8C7E00F9D7DF /* Debug */,
 				0C7BB659215A8C7E00F9D7DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C7BB66F215A9E4B00F9D7DF /* Build configuration list for PBXNativeTarget "Chris Convert to Literals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C7BB670215A9E4B00F9D7DF /* Debug */,
+				0C7BB671215A9E4B00F9D7DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
